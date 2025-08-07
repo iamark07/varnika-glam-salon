@@ -36,3 +36,21 @@
     font-size: clamp(1rem, 1.3vw, 1.125rem);
   }
 }
+
+
+
+/* testimonial section*/
+
+.testimonial-carousel .owl-stage{
+ padding-bottom: 20px !important;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card{
+  min-height: 370px;
+}
+}
+
+.testimonial-card{
+  min-height: 300px;
+}
