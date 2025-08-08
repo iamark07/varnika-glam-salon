@@ -37,20 +37,24 @@
   }
 }
 
-
-
 /* testimonial section*/
 
-.testimonial-carousel .owl-stage{
- padding-bottom: 20px !important;
+.testimonial-carousel .owl-stage {
+  padding-bottom: 20px !important;
 }
 
 @media (max-width: 768px) {
-  .testimonial-card{
-  min-height: 370px;
-}
+  .testimonial-card {
+    min-height: 370px;
+  }
 }
 
-.testimonial-card{
+.testimonial-card {
   min-height: 300px;
+}
+
+/* counter code */
+.counter {
+  font-size: 3rem;
+  font-weight: 800;
 }

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+
     <title>Franchise Opportunity - Varnika Glam | Premium Unisex Salon</title>
     <meta name="description" content="" />
     <meta charset="UTF-8" />
@@ -37,356 +37,431 @@
     <link rel="stylesheet" href="assets/css/global.css">
 
 </head>
-    <style>
-        .counter {
-            font-size: 3rem;
-            font-weight: 800;
-        }
-        .parallax {
-            background-attachment: fixed;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-        .investment-card {
-            background: linear-gradient(145deg, rgba(255, 215, 0, 0.1), rgba(255, 180, 0, 0.05));
-            border: 2px solid transparent;
-            background-clip: padding-box;
-        }
-        .investment-card:hover {
-            border: 2px solid #FFD700;
-            background: linear-gradient(145deg, rgba(255, 215, 0, 0.15), rgba(255, 180, 0, 0.08));
-        }
-    </style>
-</head>
+
 <body class="font-poppins bg-[#0a0f1a] text-white">
     <!-- header -->
-    <header class="sticky top-0 w-full bg-[#0a0f1a]/95 backdrop-blur-sm z-50 border-b border-gray-800">
-            <div class="container mx-auto px-4 py-4">
-                <div class="flex justify-between items-center">
-                    <!-- Logo -->
-                    <div class="flex items-center">
-                        <img loading="lazy" src="assets/image/logo/logo.png" alt="" class="h-14 xl:h-20">
-                        <div class="hidden">
-                            <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-3">
-                                <span class="text-black font-bold text-xl">AG</span>
-                            </div>
-                            <span class="text-2xl font-bold gold-text">Varnika Glam</span>
+    <header class="fixed top-0 w-full z-50 bg-[#0a0f1a]/95 trasnsition-all duration-300">
+        <div class="container mx-auto px-5 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <img loading="lazy" src="assets/image/logo/logo.png" alt="" class="h-14 xl:h-20">
+                    <div class="hidden">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-3">
+                            <span class="text-black font-bold text-xl">AG</span>
                         </div>
+                        <span class="text-2xl font-bold gold-text">Varnika Glam</span>
                     </div>
-                    <!-- navigation -->
-                    <nav class="flex justify-between items-center">
-                        <!-- Desktop Navigation -->
-                        <div class="hidden lg:flex items-center space-x-8">
-                            <a href="#home" class="nav-link hover:text-[#FFD700] transition-colors">Home</a>
-                            <a href="#about" class="nav-link hover:text-[#FFD700] transition-colors">About Us</a>
-                            <a href="#services" class="nav-link hover:text-[#FFD700] transition-colors">Services</a>
-                            <a href="#franchise" class="nav-link hover:text-[#FFD700] transition-colors">Franchise</a>
-                            <a href="#gallery" class="nav-link hover:text-[#FFD700] transition-colors">Gallery</a>
-                            <a href="#contact" class="nav-link hover:text-[#FFD700] transition-colors">Contact Us</a>
+                </div>
+                <!-- navigation -->
+                <nav class="flex justify-between items-center">
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex items-center space-x-8 ">
+                        <a href="index.html" class="nav-link hover:text-[#FFD700] transition-colors montserrat">Home</a>
+                        <a href="about.html" class="nav-link hover:text-[#FFD700] transition-colors montserrat">About
+                            Us</a>
+                        <a href="services.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Services</a>
+                        <a href="franchise.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Franchise</a>
+                        <a href="gallery.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Gallery</a>
+                        <a href="contact.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Contact Us</a>
+                        <a href="#">
                             <button
-                                class="header-btn btn-primary gold-gradient text-black px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transition-all">
+                                class="header-btn btn-primary gold-gradient montserrat text-black px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transition-all">
+                                <i class="ri-calendar-2-fill mr-1 text-lg"></i>
                                 Book Appointment
                             </button>
-                        </div>
-    
-                        <!-- Mobile Menu Button -->
-                        <button id="mobile-menu-btn" class="lg:hidden text-2xl" aria-controls="mobile-menu"
-                            aria-expanded="false">
-                            <i class="fas fa-bars"></i>
-                        </button>
-                    </nav>
+                        </a>
+                    </div>
 
-                </div>
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="lg:hidden text-2xl" aria-controls="mobile-menu"
+                        aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
 
-                <!-- Overlay (hidden by default) -->
-                <div id="mobile-overlay"
-                    class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 z-[999] h-[100dvh]">
-                </div>
+            </div>
 
-                <!-- Mobile Menu -->
-                <div id="mobile-menu"
-                    class="fixed top-0 -left-full w-[75%] h-[100dvh] bg-[#0a0f1a] p-6 transition-[left] duration-500 z-[999] overflow-y-auto">
-                    <img loading="lazy" src="assets/image/logo/logo.png" alt="" class="h-14 mb-10">
-                    <nav>
-                        <div class="flex flex-col space-y-4">
-                            <a href="#home" class="hover:text-[#FFD700] transition-colors">Home</a>
-                            <a href="#about" class="hover:text-[#FFD700] transition-colors">About Us</a>
-                            <a href="#services" class="hover:text-[#FFD700] transition-colors">Services</a>
-                            <a href="#franchise" class="hover:text-[#FFD700] transition-colors">Franchise</a>
-                            <a href="#gallery" class="hover:text-[#FFD700] transition-colors">Gallery</a>
-                            <a href="#contact" class="hover:text-[#FFD700] transition-colors">Contact Us</a>
-                        </div>
-                        <button class="gold-gradient text-black px-6 py-2 rounded-full font-semibold w-full text-center mt-8">
+            <!-- Overlay (hidden by default) -->
+            <div id="mobile-overlay"
+                class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 z-[999] h-[100dvh]">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="fixed top-0 -left-full w-[75%] h-[100dvh] bg-[#0a0f1a] p-6 transition-[left] duration-500 z-[999] overflow-y-auto">
+                <img loading="lazy" src="assets/image/logo/logo.png" alt="" class="h-14 mb-10">
+                <nav>
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="hover:text-[#FFD700] transition-colors montserrat">Home</a>
+                        <a href="about.html" class="hover:text-[#FFD700] transition-colors montserrat">About Us</a>
+                        <a href="services.html" class="hover:text-[#FFD700] transition-colors montserrat">Services</a>
+                        <a href="franchise.html" class="hover:text-[#FFD700] transition-colors montserrat">Franchise</a>
+                        <a href="#gallery" class="hover:text-[#FFD700] transition-colors montserrat">Gallery</a>
+                        <a href="contact.html" class="hover:text-[#FFD700] transition-colors montserrat">Contact
+                            Us</a>
+                    </div>
+                    <a href="#">
+                        <button
+                            class="gold-gradient text-black px-6 py-2.5 text-sm montserrat rounded-full font-semibold w-full text-center mt-8">
+                            <i class="ri-calendar-2-fill mr-1"></i>
                             Book Appointment
                         </button>
-                    </nav>
-                </div>
+                    </a>
+                </nav>
             </div>
+        </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="min-h-screen flex items-center relative overflow-hidden parallax" style="background-image: url('https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=1920');">
-        <div class="absolute inset-0 bg-gradient-to-r from-brand-black via-brand-black/90 to-brand-black/70"></div>
-        
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="max-w-4xl">
-                <h1 class="text-6xl md:text-8xl font-bold mb-6 gold-text fade-in">
-                    Own Your Success
-                </h1>
-                <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-white fade-in">
-                    Varnika Glam Franchise Opportunity
-                </h2>
-                <p class="text-xl md:text-2xl mb-8 text-gray-300 fade-in max-w-3xl">
-                    Join India's fastest-growing premium unisex salon chain. Build your empire in the beauty industry with our proven business model and comprehensive support system.
+    <!-- Investment Details -->
+    <section id="investment" class="pt-56 pb-28 bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0]">
+        <div class="container mx-auto px-5">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-2xl md:text-5xl font-bold mb-6 text-black">Investment Details</h2>
+                <div class="w-32 h-[3px] gold-gradient mx-auto mb-6"></div>
+                <p class="md:text-lg text-gray-700 max-w-3xl mx-auto">
+                    Flexible investment options designed to suit different business goals and financial capabilities.
                 </p>
-                <div class="flex flex-col sm:flex-row gap-4 fade-in">
-                    <button class="gold-gradient text-black px-10 py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
-                        Start Your Journey
-                    </button>
-                    <button class="border-2 border-gold-start text-gold-start px-10 py-4 rounded-full font-bold text-lg hover:bg-gold-start hover:text-black transition-all">
-                        Download Brochure
-                    </button>
-                </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Stats Section -->
-    <section class="py-20 bg-gray-900/50">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 text-center">
-                <div class="fade-in">
-                    <div class="counter gold-text" data-target="150">0</div>
-                    <p class="text-xl text-gray-300 mt-2">Active Franchises</p>
+            <!-- Investment Cards -->
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-10 mb-16">
+                <!-- Express Outlet -->
+                <div
+                    class="relative bg-white/90 py-10 px-5 md:p-10 rounded-3xl border-2 border-[#FFD700]/40 shadow-xl transition-all duration-300 fade-in overflow-hidden text-black">
+                    <span class="absolute top-0 left-0 w-24 h-24 bg-[#FFD700]/10 rounded-br-full z-0"></span>
+                    <span class="absolute bottom-0 right-0 w-24 h-24 bg-[#FFD700]/10 rounded-tl-full z-0"></span>
+                    <div class="relative z-10 text-center mb-6">
+                        <div
+                            class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="ri-flashlight-line text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-2xl font-bold gold-text mb-2">Express Outlet</h3>
+                        <div class="text-3xl md:text-4xl font-bold text-[#FFD700] mb-2">₹15-25 Lakhs</div>
+                        <p class="text-gray-700 mb-2">Perfect for high-traffic locations</p>
+                    </div>
+                    <ul class="space-y-3 mb-8 relative z-10 text-sm md:text-base">
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>800-1200 sq ft area</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>Quick service model</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>4-6 service stations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>ROI in 18-24 months</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full gold-gradient text-black py-3 rounded-full font-semibold hover:shadow-lg transition-all">
+                        Choose Express
+                    </button>
                 </div>
-                <div class="fade-in">
-                    <div class="counter gold-text" data-target="50">0</div>
-                    <p class="text-xl text-gray-300 mt-2">Cities Covered</p>
+
+                <!-- Premium Salon -->
+                <div
+                    class="relative bg-white py-12 px-5 md:p-12 rounded-3xl border-2 border-[#FFD700] shadow-2xl scale-105 z-10 fade-in overflow-hidden text-black">
+                    <span
+                        class="absolute top-[-635px] left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-[#FFD700]/20 rounded-full z-0"></span>
+                    <div class="relative z-10 text-center mb-6">
+                        <div
+                            class="inline-block bg-[#FFD700] text-black px-4 py-1 rounded-full text-xs font-semibold mb-4 shadow">
+                            MOST POPULAR
+                        </div>
+                        <div
+                            class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="ri-vip-crown-2-line text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-2xl font-bold gold-text mb-2">Premium Salon</h3>
+                        <div class="text-3xl md:text-4xl font-bold text-[#FFD700] mb-2">₹35-50 Lakhs</div>
+                        <p class="text-gray-800 mb-2">Complete luxury experience</p>
+                    </div>
+                    <ul class="space-y-3 mb-8 relative z-10 text-sm md:text-base">
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>1500-2500 sq ft area</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>Full-service salon</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>8-12 service stations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>ROI in 20-30 months</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full gold-gradient text-black py-3 rounded-full font-semibold hover:shadow-lg transition-all">
+                        Choose Premium
+                    </button>
                 </div>
-                <div class="fade-in">
-                    <div class="counter gold-text" data-target="95">0</div>
-                    <p class="text-xl text-gray-300 mt-2">% Success Rate</p>
-                </div>
-                <div class="fade-in">
-                    <div class="counter gold-text" data-target="24">0</div>
-                    <p class="text-xl text-gray-300 mt-2">Months ROI</p>
+
+                <!-- Flagship Store -->
+                <div
+                    class="relative bg-white/90 py-10 px-5 md:p-10 rounded-3xl border-2 border-[#FFD700]/40 shadow-xl transition-all duration-300 fade-in overflow-hidden text-black">
+                    <span class="absolute top-0 right-0 w-24 h-24 bg-[#FFD700]/10 rounded-bl-full z-0"></span>
+                    <span class="absolute bottom-0 left-0 w-24 h-24 bg-[#FFD700]/10 rounded-tr-full z-0"></span>
+                    <div class="relative z-10 text-center mb-6">
+                        <div
+                            class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg">
+                            <i class="ri-building-4-line text-black text-2xl"></i>
+                        </div>
+                        <h3 class="text-lg md:text-2xl font-bold gold-text mb-2">Flagship Store</h3>
+                        <div class="text-3xl nd:text-4xl font-bold text-[#FFD700] mb-2">₹75L-1Cr</div>
+                        <p class="text-gray-700 mb-2">Ultimate luxury destination</p>
+                    </div>
+                    <ul class="space-y-3 mb-8 relative z-10 text-sm md:text-base">
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>3000+ sq ft area</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>Spa + Salon + Academy</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>15+ service stations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] mr-3"></i>
+                            <span>ROI in 24-36 months</span>
+                        </li>
+                    </ul>
+                    <button
+                        class="w-full gold-gradient text-black py-3 rounded-full font-semibold hover:shadow-lg transition-all">
+                        Choose Flagship
+                    </button>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Why Choose Varnika Glam -->
-    <section id="opportunity" class="py-20">
-        <div class="container mx-auto px-4">
+    <section id="opportunity" class="py-28 bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0]">
+        <div class="container mx-auto px-5">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-5xl font-bold mb-6 gold-text">Why Choose Varnika Glam?</h2>
-                <div class="w-32 h-1 gold-gradient mx-auto mb-6"></div>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    We're not just a salon chain - we're a lifestyle brand that's revolutionizing the beauty industry across India.
+                <h2 class="text-2xl md:text-5xl font-bold mb-6 text-black">Why Choose Varnika Glam?</h2>
+                <div class="w-32 h-[3px] gold-gradient mx-auto mb-6"></div>
+                <p class="md:text-lg text-gray-700 max-w-3xl mx-auto">
+                    We're not just a salon chain – we're a lifestyle brand that's revolutionizing the beauty industry
+                    across India.
                 </p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-12 items-center mb-20">
                 <div class="fade-in">
-                    <img src="https://images.pexels.com/photos/3993456/pexels-photo-3993456.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                         alt="Premium Salon Interior" class="w-full h-96 object-cover rounded-lg shadow-2xl">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-[#FFD700]/30">
+                        <img src="https://images.pexels.com/photos/3993456/pexels-photo-3993456.jpeg?auto=compress&cs=tinysrgb&w=800"
+                            alt="Premium Salon Interior" class="w-full h-96 object-cover">
+                        <span
+                            class="absolute top-4 left-4 bg-[#FFD700]/80 text-black px-4 py-1 rounded-full font-semibold text-sm shadow">Premium
+                            Ambience</span>
+                    </div>
                 </div>
                 <div class="fade-in">
-                    <h3 class="text-3xl font-bold mb-6 gold-text">Premium Brand Recognition</h3>
-                    <p class="text-gray-300 text-lg mb-6 leading-relaxed">
-                        Varnika Glam has established itself as the go-to destination for premium beauty services. Our brand is synonymous with luxury, quality, and exceptional customer experience.
+                    <h3 class="text-xl md:text-3xl font-bold mb-6 gold-text">Premium Brand Recognition</h3>
+                    <p class="text-gray-800 md:text-lg mb-6 leading-relaxed">
+                        Varnika Glam is the go-to destination for premium beauty services. Our brand stands for luxury,
+                        quality, and an exceptional customer experience. offering personalized treatments, expert
+                        stylists, modern techniques, and a relaxing atmosphere for every valued guest
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-center">
-                            <i class="fas fa-check-circle text-gold-start mr-3"></i>
-                            <span>Award-winning salon chain</span>
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] text-xl mr-3"></i>
+                            <span class="text-gray-900 font-medium">Award-winning salon chain</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-check-circle text-gold-start mr-3"></i>
-                            <span>Celebrity clientele and endorsements</span>
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] text-xl mr-3"></i>
+                            <span class="text-gray-900 font-medium">Celebrity clientele and endorsements</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-check-circle text-gold-start mr-3"></i>
-                            <span>Strong social media presence</span>
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] text-xl mr-3"></i>
+                            <span class="text-gray-900 font-medium">Strong social media presence</span>
                         </li>
                         <li class="flex items-center">
-                            <i class="fas fa-check-circle text-gold-start mr-3"></i>
-                            <span>Premium positioning in market</span>
+                            <i class="ri-checkbox-circle-fill text-[#FFD700] text-xl mr-3"></i>
+                            <span class="text-gray-900 font-medium">Premium positioning in the market</span>
                         </li>
                     </ul>
                 </div>
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-gray-800/50 p-8 rounded-lg border border-gray-700 hover-glow transition-all duration-300 fade-in">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-chart-line text-black text-2xl"></i>
+                <div
+                    class="bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0] py-8 px-6 md:p-8 rounded-2xl border-2 border-[#FFD700]/30 shadow-xl transition-all duration-300 fade-in relative">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#FFD700]/10 rounded-bl-full z-0"></div>
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="ri-bar-chart-2-line text-black text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 gold-text">Proven Business Model</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Our time-tested franchise model has delivered consistent returns across all locations with comprehensive operational guidelines.
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 gold-text">Proven Business Model</h3>
+                    <p class="text-gray-800 text-sm md:text-base leading-relaxed">
+                        Our franchise model delivers consistent returns and is backed by comprehensive operational
+                        guidelines and real business results.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-lg border border-gray-700 hover-glow transition-all duration-300 fade-in">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-users text-black text-2xl"></i>
+
+                <div
+                    class="bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0] py-8 px-6 md:p-8 rounded-2xl border-2 border-[#FFD700]/30 shadow-xl transition-all duration-300 fade-in relative">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#FFD700]/10 rounded-bl-full z-0"></div>
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="ri-team-line text-black text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 gold-text">Expert Team Support</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Get access to our team of industry experts, master stylists, and business consultants for ongoing support and guidance.
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 gold-text">Expert Team Support</h3>
+                    <p class="text-gray-800 text-sm md:text-base leading-relaxed">
+                        Access our team of industry experts, master stylists, and business consultants for ongoing
+                        support and guidance at every step.
                     </p>
                 </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-lg border border-gray-700 hover-glow transition-all duration-300 fade-in">
-                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6">
-                        <i class="fas fa-crown text-black text-2xl"></i>
+
+                <div
+                    class="bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0] py-8 px-6 md:p-8 rounded-2xl border-2 border-[#FFD700]/30 shadow-xl transition-all duration-300 fade-in relative">
+                    <div class="absolute top-0 right-0 w-24 h-24 bg-[#FFD700]/10 rounded-bl-full z-0"></div>
+                    <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mb-6 shadow-lg">
+                        <i class="ri-vip-crown-2-line text-black text-2xl"></i>
                     </div>
-                    <h3 class="text-2xl font-semibold mb-4 gold-text">Premium Services</h3>
-                    <p class="text-gray-400 leading-relaxed">
-                        Offer cutting-edge beauty treatments, latest trends, and luxury services that command premium pricing in the market.
+                    <h3 class="text-xl md:text-2xl font-semibold mb-4 gold-text">Premium Services</h3>
+                    <p class="text-gray-800 text-sm md:text-base leading-relaxed">
+                        Offer the latest beauty treatments, trending styles, and luxury services that command premium
+                        pricing in your market.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Investment Details -->
-    <section id="investment" class="py-20 bg-gray-900/30">
-        <div class="container mx-auto px-4">
+    <!-- Franchise Process -->
+    <section id="process"
+        class="py-20 bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0] relative overflow-x-hidden">
+        <div class="container mx-auto px-5">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-5xl font-bold mb-6 gold-text">Investment Details</h2>
-                <div class="w-32 h-1 gold-gradient mx-auto mb-6"></div>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Flexible investment options designed to suit different business goals and financial capabilities.
+                <h2 class="text-2xl md:text-5xl font-bold mb-6 text-black">Simple Franchise Process</h2>
+                <div class="w-32 h-[3px] gold-gradient mx-auto mb-6"></div>
+                <p class="md:text-lg text-gray-700 max-w-3xl mx-auto">
+                    Get started with your Varnika Glam franchise in just 6 easy steps.
                 </p>
             </div>
-            
-            <div class="grid lg:grid-cols-3 gap-8 mb-16">
-                <div class="investment-card p-8 rounded-lg transition-all duration-300 fade-in">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold gold-text mb-2">Express Outlet</h3>
-                        <div class="text-4xl font-bold text-white mb-4">₹15-25 Lakhs</div>
-                        <p class="text-gray-400">Perfect for high-traffic locations</p>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>800-1200 sq ft area</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>Quick service model</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>4-6 service stations</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>ROI in 18-24 months</span>
-                        </li>
-                    </ul>
-                    <button class="w-full gold-gradient text-black py-3 rounded-full font-semibold hover:shadow-lg transition-all">
-                        Choose Express
-                    </button>
+            <div class="relative max-w-7xl mx-auto">
+                <!-- Vertical Gold Line -->
+                <div
+                    class="hidden md:block absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gradient-to-b from-[#FFD700] to-[#FFD700]/90 rounded-full opacity-80 z-0">
                 </div>
-                
-                <div class="investment-card p-8 rounded-lg transition-all duration-300 fade-in border-2 border-gold-start">
-                    <div class="text-center mb-6">
-                        <div class="inline-block bg-gold-start text-black px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                            MOST POPULAR
+                <div class="space-y-4 md:space-y-14 relative z-10">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                        <div class="order-2 md:order-1 md:w-1/2 md:pr-12 text-center md:text-right">
+                            <h3 class="text-xl font-semibold gold-text mb-2">Initial Inquiry</h3>
+                            <p class="text-gray-800">Submit your franchise application and initial requirements through
+                                our online form or contact our franchise team.</p>
                         </div>
-                        <h3 class="text-2xl font-bold gold-text mb-2">Premium Salon</h3>
-                        <div class="text-4xl font-bold text-white mb-4">₹35-50 Lakhs</div>
-                        <p class="text-gray-400">Complete luxury experience</p>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>1500-2500 sq ft area</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>Full-service salon</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>8-12 service stations</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>ROI in 20-30 months</span>
-                        </li>
-                    </ul>
-                    <button class="w-full gold-gradient text-black py-3 rounded-full font-semibold hover:shadow-lg transition-all">
-                        Choose Premium
-                    </button>
-                </div>
-                
-                <div class="investment-card p-8 rounded-lg transition-all duration-300 fade-in">
-                    <div class="text-center mb-6">
-                        <h3 class="text-2xl font-bold gold-text mb-2">Flagship Store</h3>
-                        <div class="text-4xl font-bold text-white mb-4">₹75L-1Cr</div>
-                        <p class="text-gray-400">Ultimate luxury destination</p>
-                    </div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>3000+ sq ft area</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>Spa + Salon + Academy</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>15+ service stations</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-gold-start mr-3"></i>
-                            <span>ROI in 24-36 months</span>
-                        </li>
-                    </ul>
-                    <button class="w-full gold-gradient text-black py-3 rounded-full font-semibold hover:shadow-lg transition-all">
-                        Choose Flagship
-                    </button>
-                </div>
-            </div>
-
-            <!-- Investment Breakdown -->
-            <div class="bg-gray-800/30 p-8 rounded-lg fade-in">
-                <h3 class="text-3xl font-bold gold-text mb-6 text-center">Investment Breakdown</h3>
-                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-handshake text-gold-start text-xl"></i>
+                        <div class="order-1 md:order-2 flex flex-col items-center md:w-0 md:px-0">
+                            <div class="relative flex flex-col items-center">
+                                <div
+                                    class="bg-[#FFD700] text-black font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shadow-lg border-4 border-white z-10">
+                                    <i class="ri-contacts-book-2-line"></i>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="font-semibold mb-2">Franchise Fee</h4>
-                        <p class="text-gray-400">₹3-8 Lakhs</p>
+                        <div class="md:w-1/2"></div>
                     </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-tools text-gold-start text-xl"></i>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                        <div class="md:w-1/2"></div>
+                        <div class="flex flex-col items-center md:w-0 md:px-0">
+                            <div class="relative flex flex-col items-center">
+                                <div
+                                    class="bg-[#FFD700] text-black font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shadow-lg border-4 border-white z-10">
+                                    <i class="ri-search-eye-line"></i>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="font-semibold mb-2">Setup & Equipment</h4>
-                        <p class="text-gray-400">₹8-25 Lakhs</p>
+                        <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                            <h3 class="text-xl font-semibold gold-text mb-2">Profile Evaluation</h3>
+                            <p class="text-gray-800">Our team evaluates your profile, financial capability, and business
+                                experience to ensure mutual compatibility.</p>
+                        </div>
                     </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-paint-brush text-gold-start text-xl"></i>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                        <div class="order-2 md:order-1 md:w-1/2 md:pr-12 text-center md:text-right">
+                            <h3 class="text-xl font-semibold gold-text mb-2">Business Discussion</h3>
+                            <p class="text-gray-800">Detailed discussion about investment, location, market potential,
+                                and business projections with our franchise consultant.</p>
                         </div>
-                        <h4 class="font-semibold mb-2">Interior & Branding</h4>
-                        <p class="text-gray-400">₹4-15 Lakhs</p>
+                        <div class="order-1 md:order-2 flex flex-col items-center md:w-0 md:px-0">
+                            <div class="relative flex flex-col items-center">
+                                <div
+                                    class="bg-[#FFD700] text-black font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shadow-lg border-4 border-white z-10">
+                                    <i class="ri-discuss-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
                     </div>
-                    <div class="text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center mx-auto mb-4">
-                            <i class="fas fa-rupee-sign text-gold-start text-xl"></i>
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                        <div class="md:w-1/2"></div>
+                        <div class="flex flex-col items-center md:w-0 md:px-0">
+                            <div class="relative flex flex-col items-center">
+                                <div
+                                    class="bg-[#FFD700] text-black font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shadow-lg border-4 border-white z-10">
+                                    <i class="ri-file-list-3-line"></i>
+                                </div>
+                            </div>
                         </div>
-                        <h4 class="font-semibold mb-2">Working Capital</h4>
-                        <p class="text-gray-400">₹2-8 Lakhs</p>
+                        <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                            <h3 class="text-xl font-semibold gold-text mb-2">Agreement Signing</h3>
+                            <p class="text-gray-800">Review and sign the franchise agreement along with the initial
+                                franchise fee payment.</p>
+                        </div>
+                    </div>
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                        <div class="order-2 md:order-1 md:w-1/2 md:pr-12 text-center md:text-right">
+                            <h3 class="text-xl font-semibold gold-text mb-2">Setup & Training</h3>
+                            <p class="text-gray-800">Complete salon setup with our support team and comprehensive
+                                training for you and your staff.</p>
+                        </div>
+                        <div class="order-1 md:order-2 flex flex-col items-center md:w-0 md:px-0">
+                            <div class="relative flex flex-col items-center">
+                                <div
+                                    class="bg-[#FFD700] text-black font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shadow-lg border-4 border-white z-10">
+                                    <i class="ri-graduation-cap-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2"></div>
+                    </div>
+                    <!-- Step 6 -->
+                    <div class="flex flex-col md:flex-row items-center md:justify-between gap-4 md:gap-0">
+                        <div class="md:w-1/2"></div>
+                        <div class="flex flex-col items-center md:w-0 md:px-0">
+                            <div class="relative flex flex-col items-center">
+                                <div
+                                    class="bg-[#FFD700] text-black font-bold text-2xl w-16 h-16 flex items-center justify-center rounded-full shadow-lg border-4 border-white z-10">
+                                    <i class="ri-flag-2-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 text-center md:text-left">
+                            <h3 class="text-xl font-semibold gold-text mb-2">Grand Opening</h3>
+                            <p class="text-gray-800">Launch your Varnika Glam salon with our marketing support and
+                                ongoing operational guidance.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -395,51 +470,57 @@
 
     <!-- Support System -->
     <section id="support" class="py-20">
-        <div class="container mx-auto px-4">
+        <div class="container mx-auto px-5">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-5xl font-bold mb-6 gold-text">Complete Support System</h2>
-                <div class="w-32 h-1 gold-gradient mx-auto mb-6"></div>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                <h2 class="text-2xl md:text-5xl font-bold mb-6 gold-text">Complete Support System</h2>
+                <div class="w-32 h-[3px] gold-gradient mx-auto mb-6"></div>
+                <p class="md:text-lg text-gray-300 max-w-3xl mx-auto">
                     From day one to ongoing operations, we provide comprehensive support to ensure your success.
                 </p>
             </div>
-            
+
             <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
                 <div class="fade-in">
-                    <h3 class="text-3xl font-bold mb-6 gold-text">Training & Development</h3>
+                    <h3 class="text-xl md:text-3xl font-bold mb-6 gold-text">Training & Development</h3>
                     <div class="space-y-6">
                         <div class="flex items-start">
-                            <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                                 <i class="fas fa-graduation-cap text-black"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Initial Training Program</h4>
-                                <p class="text-gray-400">Comprehensive 2-week training at our headquarters covering all aspects of salon operations.</p>
+                                <p class="text-gray-400">Comprehensive 2-week training at our headquarters covering all
+                                    aspects of salon operations.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                                 <i class="fas fa-chalkboard-teacher text-black"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Staff Training</h4>
-                                <p class="text-gray-400">Professional training for your staff on latest techniques, customer service, and brand standards.</p>
+                                <p class="text-gray-400">Professional training for your staff on latest techniques,
+                                    customer service, and brand standards.</p>
                             </div>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <div
+                                class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4 flex-shrink-0">
                                 <i class="fas fa-laptop text-black"></i>
                             </div>
                             <div>
                                 <h4 class="font-semibold mb-2">Online Learning Platform</h4>
-                                <p class="text-gray-400">Access to our exclusive online training modules and certification programs.</p>
+                                <p class="text-gray-400">Access to our exclusive online training modules and
+                                    certification programs.</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="fade-in">
-                    <img src="https://images.pexels.com/photos/3252753/pexels-photo-3252753.jpeg?auto=compress&cs=tinysrgb&w=800" 
-                         alt="Training Session" class="w-full h-96 object-cover rounded-lg shadow-2xl">
+                    <img src="https://images.pexels.com/photos/3252753/pexels-photo-3252753.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Training Session" class="w-full h-96 object-cover rounded-lg shadow-2xl">
                 </div>
             </div>
 
@@ -451,7 +532,7 @@
                     <h4 class="font-semibold mb-2 gold-text">Site Selection</h4>
                     <p class="text-gray-400 text-sm">Expert guidance on location selection and lease negotiation</p>
                 </div>
-                
+
                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 text-center fade-in">
                     <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-palette text-black text-xl"></i>
@@ -459,15 +540,16 @@
                     <h4 class="font-semibold mb-2 gold-text">Interior Design</h4>
                     <p class="text-gray-400 text-sm">Complete interior design and setup as per brand standards</p>
                 </div>
-                
+
                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 text-center fade-in">
                     <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-bullhorn text-black text-xl"></i>
                     </div>
                     <h4 class="font-semibold mb-2 gold-text">Marketing Support</h4>
-                    <p class="text-gray-400 text-sm">National and local marketing campaigns and promotional materials</p>
+                    <p class="text-gray-400 text-sm">National and local marketing campaigns and promotional materials
+                    </p>
                 </div>
-                
+
                 <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 text-center fade-in">
                     <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mx-auto mb-4">
                         <i class="fas fa-headset text-black text-xl"></i>
@@ -479,197 +561,58 @@
         </div>
     </section>
 
-    <!-- Franchise Process -->
-    <section id="process" class="py-20 bg-gray-900/30">
-        <div class="container mx-auto px-4">
+    <!-- Franchise Contact Section (Bright, Unique, Premium) -->
+    <section id="contact" class="py-28 bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0]">
+        <div class="container mx-auto px-5">
             <div class="text-center mb-16 fade-in">
-                <h2 class="text-5xl font-bold mb-6 gold-text">Simple Franchise Process</h2>
-                <div class="w-32 h-1 gold-gradient mx-auto mb-6"></div>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Get started with your Varnika Glam franchise in just 6 easy steps.
+                <h2 class="text-2xl md:text-5xl font-bold mb-6 text-black">Ready to Start Your Journey?</h2>
+                <div class="w-32 h-[3px] gold-gradient mx-auto mb-6"></div>
+                <p class="md:text-lg text-gray-700 max-w-3xl mx-auto">
+                    Take the first step towards owning a successful Varnika Glam franchise. Our team is ready to guide
+                    you through the process.
                 </p>
             </div>
-            
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-8">
-                    <div class="flex items-center fade-in">
-                        <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-black font-bold text-xl">1</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2 gold-text">Initial Inquiry</h3>
-                            <p class="text-gray-400">Submit your franchise application and initial requirements through our online form or contact our franchise team.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center fade-in">
-                        <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-black font-bold text-xl">2</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2 gold-text">Profile Evaluation</h3>
-                            <p class="text-gray-400">Our team evaluates your profile, financial capability, and business experience to ensure mutual compatibility.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center fade-in">
-                        <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-black font-bold text-xl">3</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2 gold-text">Business Discussion</h3>
-                            <p class="text-gray-400">Detailed discussion about investment, location, market potential, and business projections with our franchise consultant.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center fade-in">
-                        <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-black font-bold text-xl">4</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2 gold-text">Agreement Signing</h3>
-                            <p class="text-gray-400">Review and sign the franchise agreement along with the initial franchise fee payment.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center fade-in">
-                        <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-black font-bold text-xl">5</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2 gold-text">Setup & Training</h3>
-                            <p class="text-gray-400">Complete salon setup with our support team and comprehensive training for you and your staff.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-center fade-in">
-                        <div class="w-16 h-16 gold-gradient rounded-full flex items-center justify-center mr-6 flex-shrink-0">
-                            <span class="text-black font-bold text-xl">6</span>
-                        </div>
-                        <div class="flex-1">
-                            <h3 class="text-xl font-semibold mb-2 gold-text">Grand Opening</h3>
-                            <p class="text-gray-400">Launch your Varnika Glam salon with our marketing support and ongoing operational guidance.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Success Stories -->
-    <section class="py-20">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-5xl font-bold mb-6 gold-text">Success Stories</h2>
-                <div class="w-32 h-1 gold-gradient mx-auto mb-6"></div>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Hear from our successful franchise partners who have built thriving businesses with Varnika Glam.
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-3 gap-8">
-                <div class="bg-gray-800/50 p-8 rounded-lg border border-gray-700 fade-in">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                             alt="Franchise Partner" class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-semibold gold-text">Priya Sharma</h4>
-                            <p class="text-gray-400 text-sm">Mumbai Franchise Owner</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mb-4">"Joining Varnika Glam was the best business decision I made. The support system is incredible, and I achieved break-even in just 18 months. Now I'm planning my second outlet!"</p>
-                    <div class="flex text-gold-start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-lg border border-gray-700 fade-in">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                             alt="Franchise Partner" class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-semibold gold-text">Rajesh Kumar</h4>
-                            <p class="text-gray-400 text-sm">Delhi Franchise Owner</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mb-4">"The training and ongoing support from Varnika Glam team is exceptional. My salon is consistently booked, and the premium positioning helps us charge premium rates."</p>
-                    <div class="flex text-gold-start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                
-                <div class="bg-gray-800/50 p-8 rounded-lg border border-gray-700 fade-in">
-                    <div class="flex items-center mb-6">
-                        <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=100" 
-                             alt="Franchise Partner" class="w-16 h-16 rounded-full object-cover mr-4">
-                        <div>
-                            <h4 class="font-semibold gold-text">Anita Patel</h4>
-                            <p class="text-gray-400 text-sm">Bangalore Franchise Owner</p>
-                        </div>
-                    </div>
-                    <p class="text-gray-300 mb-4">"From zero experience in beauty industry to running a successful salon - Varnika Glam made it possible. The brand recognition brings customers automatically."</p>
-                    <div class="flex text-gold-start">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-20 bg-gray-900/50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16 fade-in">
-                <h2 class="text-5xl font-bold mb-6 gold-text">Ready to Start Your Journey?</h2>
-                <div class="w-32 h-1 gold-gradient mx-auto mb-6"></div>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-                    Take the first step towards owning a successful Varnika Glam franchise. Our team is ready to guide you through the process.
-                </p>
-            </div>
-            
-            <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                <div class="fade-in">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Contact Form -->
+                <div class="fade-in bg-white/90 rounded-3xl shadow-xl py-10 px-5 md:p-10">
                     <form class="space-y-6" id="franchise-form">
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="Full Name *" required
-                                   class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-gold-start focus:outline-none">
-                            <input type="email" placeholder="Email Address *" required
-                                   class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-gold-start focus:outline-none">
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <input type="tel" placeholder="Phone Number *" required
-                                   class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-gold-start focus:outline-none">
-                            <select class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-gold-start focus:outline-none">
-                                <option value="">Preferred City</option>
-                                <option value="mumbai">Mumbai</option>
-                                <option value="delhi">Delhi</option>
-                                <option value="bangalore">Bangalore</option>
-                                <option value="pune">Pune</option>
-                                <option value="hyderabad">Hyderabad</option>
-                                <option value="chennai">Chennai</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-4">
-                            <select class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-gold-start focus:outline-none">
+                            <div class="md:col-span-2">
+                                <input type="text" placeholder="Full Name *" required
+                                    class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#FFD700] focus:outline-none text-sm md:text-base">
+                            </div>
+                            <div class="md:col-span-2">
+                                <input type="email" placeholder="Email Address *" required
+                                    class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#FFD700] focus:outline-none text-sm md:text-base">
+                            </div>
+
+                            <div class="">
+                                <input type="tel" placeholder="Phone Number *" required
+                                    class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#FFD700] focus:outline-none text-sm md:text-base">
+                            </div>
+                            <div class="">
+                                <select
+                                    class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:border-[#FFD700] focus:outline-none text-sm md:text-base">
+                                    <option value="">Preferred City</option>
+                                    <option value="mumbai">Mumbai</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="bangalore">Bangalore</option>
+                                    <option value="pune">Pune</option>
+                                    <option value="hyderabad">Hyderabad</option>
+                                    <option value="chennai">Chennai</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+
+                            <select
+                                class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:border-[#FFD700] focus:outline-none text-sm md:text-base">
                                 <option value="">Investment Range</option>
                                 <option value="15-25">₹15-25 Lakhs</option>
                                 <option value="35-50">₹35-50 Lakhs</option>
                                 <option value="75-100">₹75L-1Cr</option>
                             </select>
-                            <select class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white focus:border-gold-start focus:outline-none">
+                            <select
+                                class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 focus:border-[#FFD700] focus:outline-none text-sm md:text-base">
                                 <option value="">Business Experience</option>
                                 <option value="none">No Experience</option>
                                 <option value="beauty">Beauty Industry</option>
@@ -677,25 +620,27 @@
                                 <option value="other">Other Business</option>
                             </select>
                         </div>
-                        <textarea placeholder="Tell us about your business goals and any specific questions..." rows="4" 
-                                  class="w-full bg-gray-800/50 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:border-gold-start focus:outline-none resize-none"></textarea>
-                        <button type="submit" class="w-full gold-gradient text-black py-4 rounded-full font-bold text-lg hover:shadow-xl transition-all">
-                            Submit Franchise Application
+                        <textarea placeholder="Tell us about your business goals and any specific questions..." rows="4"
+                            class="w-full bg-white border border-gray-300 rounded-lg px-4 py-3 text-gray-900 placeholder-gray-400 focus:border-[#FFD700] focus:outline-none resize-none text-sm md:text-base"></textarea>
+                        <button type="submit"
+                            class="gold-gradient text-black px-10 py-3 rounded-full font-semibold md:text-lg hover:shadow-xl transition-all w-full">
+                            Submit Application
                         </button>
                     </form>
                 </div>
-                
+                <!-- Contact Info & Downloads -->
                 <div class="fade-in">
-                    <div class="bg-gray-800/30 p-8 rounded-lg">
-                        <h3 class="text-2xl font-bold gold-text mb-6">Get In Touch</h3>
-                        <div class="space-y-6">
+                    <div
+                        class="bg-gradient-to-br from-[#fffbe6] via-[#fff] to-[#f9f6f0] border-2 border-[#FFD700]/20 rounded-3xl shadow-lg py-10 px-5 md:p-10">
+                        <h3 class="text-2xl font-bold gold-text mb-8 text-center">Get In Touch</h3>
+                        <div class="space-y-6 mb-8">
                             <div class="flex items-center">
                                 <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-4">
                                     <i class="fas fa-phone text-black"></i>
                                 </div>
                                 <div>
-                                    <p class="font-semibold">Franchise Helpline</p>
-                                    <p class="text-gray-400">+91 98765 43210</p>
+                                    <p class="font-semibold text-gray-900 text-sm md:text-base">Franchise Helpline</p>
+                                    <p class="text-gray-700 text-xs md:text-base">+91 98765 43210</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -703,8 +648,8 @@
                                     <i class="fas fa-envelope text-black"></i>
                                 </div>
                                 <div>
-                                    <p class="font-semibold">Email</p>
-                                    <p class="text-gray-400">franchise@varnikaglam.com</p>
+                                    <p class="font-semibold text-gray-900 text-sm md:text-base">Email</p>
+                                    <p class="text-gray-700 text-xs md:text-base">franchise@varnikaglam.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -712,8 +657,8 @@
                                     <i class="fas fa-map-marker-alt text-black"></i>
                                 </div>
                                 <div>
-                                    <p class="font-semibold">Head Office</p>
-                                    <p class="text-gray-400">Business District, Mumbai</p>
+                                    <p class="font-semibold text-gray-900 text-sm md:text-base">Head Office</p>
+                                    <p class="text-gray-700 text-xs md:text-base">Business District, Mumbai</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
@@ -721,21 +666,22 @@
                                     <i class="fas fa-clock text-black"></i>
                                 </div>
                                 <div>
-                                    <p class="font-semibold">Business Hours</p>
-                                    <p class="text-gray-400">Mon-Sat: 10 AM - 7 PM</p>
+                                    <p class="font-semibold text-gray-900 text-sm md:text-base">Business Hours</p>
+                                    <p class="text-gray-700 text-xs md:text-base">Mon-Sat: 10 AM - 7 PM</p>
                                 </div>
                             </div>
                         </div>
-                        
-                        <div class="mt-8 pt-8 border-t border-gray-700">
+                        <div class="pt-8 border-t border-[#FFD700]/20">
                             <h4 class="font-semibold mb-4 gold-text">Download Resources</h4>
-                            <div class="space-y-3">
-                                <button class="w-full bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg text-left transition-colors">
-                                    <i class="fas fa-download mr-3 text-gold-start"></i>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <button
+                                    class="w-full bg-[#FFD700]/20 px-4 py-3 rounded-lg text-left transition-colors font-semibold text-gray-900 flex items-center text-xs md:text-base">
+                                    <i class="fas fa-download mr-3 text-[#FFD700]"></i>
                                     Franchise Brochure (PDF)
                                 </button>
-                                <button class="w-full bg-gray-700 hover:bg-gray-600 px-4 py-3 rounded-lg text-left transition-colors">
-                                    <i class="fas fa-download mr-3 text-gold-start"></i>
+                                <button
+                                    class="w-full bg-[#FFD700]/20 px-4 py-3 rounded-lg text-left transition-colors font-semibold text-gray-900 flex items-centerr text-xs md:text-base">
+                                    <i class="fas fa-download mr-3 text-[#FFD700]"></i>
                                     Investment Guide (PDF)
                                 </button>
                             </div>
@@ -838,115 +784,7 @@
 
 
 
-    <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        // Fade in animation on scroll
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Counter animation
-        function animateCounter(element) {
-            const target = parseInt(element.getAttribute('data-target'));
-            const duration = 2000;
-            const step = target / (duration / 16);
-            let current = 0;
-
-            const timer = setInterval(() => {
-                current += step;
-                if (current >= target) {
-                    current = target;
-                    clearInterval(timer);
-                }
-                element.textContent = Math.floor(current);
-            }, 16);
-        }
-
-        // Trigger counter animation when in view
-        const counterObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateCounter(entry.target);
-                    counterObserver.unobserve(entry.target);
-                }
-            });
-        });
-
-        document.querySelectorAll('.counter').forEach(counter => {
-            counterObserver.observe(counter);
-        });
-
-        // Form submission
-        document.getElementById('franchise-form').addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Show success message
-            const submitBtn = e.target.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = 'Application Submitted!';
-            submitBtn.style.background = 'linear-gradient(135deg, #10B981, #059669)';
-            
-            setTimeout(() => {
-                submitBtn.textContent = originalText;
-                submitBtn.style.background = '';
-                e.target.reset();
-            }, 3000);
-        });
-
-        // Smooth scroll for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-                // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
-            });
-        });
-
-        // Download buttons functionality
-        document.querySelectorAll('button[class*="download"]').forEach(btn => {
-            btn.addEventListener('click', () => {
-                alert('Download will start shortly. Thank you for your interest in Varnika Glam franchise!');
-            });
-        });
-
-        // Apply Now buttons
-        document.querySelectorAll('button').forEach(btn => {
-            if (btn.textContent.includes('Apply') || btn.textContent.includes('Choose')) {
-                btn.addEventListener('click', () => {
-                    document.getElementById('contact').scrollIntoView({
-                        behavior: 'smooth'
-                    });
-                });
-            }
-        });
-    </script>
+    <script src="assets/js/global.js"></script>
 </body>
+
 </html>
