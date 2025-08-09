@@ -1,21 +1,3 @@
-// Fade in animation on scroll
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("visible");
-    }
-  });
-}, observerOptions);
-
-document.querySelectorAll(".fade-in").forEach((el) => {
-  observer.observe(el);
-});
-
 // Gallery lightbox
 const galleryImages = document.querySelectorAll(".gallery-img");
 const lightbox = document.getElementById("lightbox");
@@ -47,27 +29,58 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-
-
 // hero section slider
 let currentSlide = 0;
-    const slides = document.querySelectorAll(".slide");
+const slides = document.querySelectorAll(".slide");
 
-    function showSlide(index) {
-        slides.forEach((slide, i) => {
-            slide.style.opacity = i === index ? "1" : "0";
-        });
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    slide.style.opacity = i === index ? "1" : "0";
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto Slide every 5 seconds
+setInterval(nextSlide, 5000);
+
+// Counter animation
+function animateCounter(element) {
+  const target = parseInt(element.getAttribute("data-target"));
+  const suffix = element.getAttribute("data-suffix") || ""; // new line
+  const duration = 2000;
+  const step = target / (duration / 16);
+  let current = 0;
+
+  const timer = setInterval(() => {
+    current += step;
+    if (current >= target) {
+      current = target;
+      clearInterval(timer);
     }
+    element.textContent = Math.floor(current) + suffix; // added suffix
+  }, 16);
+}
 
-    function nextSlide() {
-        currentSlide = (currentSlide + 1) % slides.length;
-        showSlide(currentSlide);
+// Trigger counter animation when in view
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      animateCounter(entry.target);
+      counterObserver.unobserve(entry.target);
     }
+  });
+});
 
-    function prevSlide() {
-        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
-        showSlide(currentSlide);
-    }
+document.querySelectorAll(".counter").forEach((counter) => {
+  counterObserver.observe(counter);
+});
 
-    // Auto Slide every 5 seconds
-    setInterval(nextSlide, 5000);
