@@ -1,3 +1,37 @@
+const watchNowBtn = document.getElementById("watchNowBtn");
+const videoPopup = document.getElementById("videoPopup");
+const popupVideo = document.getElementById("popupVideo");
+const closeBtn = document.getElementById("closeBtn");
+
+// Function to close popup
+function closePopup() {
+  popupVideo.pause();
+  videoPopup.querySelector("div").classList.add("scale-75");
+  setTimeout(() => {
+    videoPopup.classList.add("opacity-0", "pointer-events-none");
+  }, 300);
+}
+
+// Show popup with animation
+watchNowBtn.addEventListener("click", () => {
+  videoPopup.classList.remove("opacity-0", "pointer-events-none");
+  setTimeout(() => {
+    videoPopup.querySelector("div").classList.remove("scale-75");
+  }, 10);
+  popupVideo.currentTime = 0;
+  popupVideo.play();
+});
+
+// Hide popup when overlay clicked
+videoPopup.addEventListener("click", (e) => {
+  if (e.target === videoPopup) {
+    closePopup();
+  }
+});
+
+// Hide popup when close button clicked
+closeBtn.addEventListener("click", closePopup);
+
 // Gallery lightbox
 const galleryImages = document.querySelectorAll(".gallery-img");
 const lightbox = document.getElementById("lightbox");
@@ -83,4 +117,3 @@ const counterObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll(".counter").forEach((counter) => {
   counterObserver.observe(counter);
 });
-

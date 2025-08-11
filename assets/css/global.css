@@ -79,4 +79,16 @@
 }
 
 
-
+/* form valiadtion */
+.form-error {
+  color: #e53935;
+  font-size: 0.7rem;
+  margin-top: 2px;
+  display: block;
+  transition: color 0.2s;
+}
+@media (min-width: 1024) {
+  .form-error {
+    font-size: 0.85rem;
+  }
+}
