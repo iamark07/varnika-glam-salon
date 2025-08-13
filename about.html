@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>About Us - Varnika Glam | Premium Unisex Salon</title>
+    <meta name="description" content="" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/logo/favicon.ico" type="image/png" />
+
+    <!-- Swiper CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/global.css">
+
+</head>
+
+<body class="font-poppins bg-gradient-to-b from-[#fffbe6] via-[#fff] to-[#f9f6f0] text-white">
+    <!-- header -->
+    <header class="fixed top-0 w-full z-50 bg-[#0a0f1a]/95 trasnsition-all duration-300">
+        <div class="container mx-auto px-5 py-4">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="index.html">
+                        <img loading="lazy" src="assets/image/logo/logo.png" alt="" class="h-14 xl:h-20">
+                    </a>
+                    <div class="hidden">
+                        <div class="w-12 h-12 gold-gradient rounded-full flex items-center justify-center mr-3">
+                            <span class="text-black font-bold text-xl">AG</span>
+                        </div>
+                        <span class="text-2xl font-bold gold-text">Varnika Glam</span>
+                    </div>
+                </div>
+                <!-- navigation -->
+                <nav class="flex justify-between items-center">
+                    <!-- Desktop Navigation -->
+                    <div class="hidden lg:flex items-center space-x-8 ">
+                        <a href="index.html" class="nav-link hover:text-[#FFD700] transition-colors montserrat">Home</a>
+                        <a href="about.html" class="nav-link hover:text-[#FFD700] transition-colors montserrat">About
+                            Us</a>
+                        <a href="services.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Services</a>
+                        <a href="franchise.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Franchise</a>
+                        <a href="index.html#gallery"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Gallery</a>
+                        <a href="contact.html"
+                            class="nav-link hover:text-[#FFD700] transition-colors montserrat">Contact Us</a>
+                        <a href="contact.html">
+                            <button
+                                class="header-btn btn-primary gold-gradient montserrat text-black px-6 py-2.5 rounded-full font-semibold hover:shadow-lg transition-all">
+                                <i class="ri-calendar-2-fill mr-1 text-lg"></i>
+                                Book Appointment
+                            </button>
+                        </a>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="mobile-menu-btn" class="lg:hidden text-2xl" aria-controls="mobile-menu"
+                        aria-expanded="false">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </nav>
+
+            </div>
+
+            <!-- Overlay (hidden by default) -->
+            <div id="mobile-overlay"
+                class="fixed inset-0 bg-black/60 opacity-0 pointer-events-none transition-opacity duration-300 z-[999] h-[100dvh]">
+            </div>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="fixed top-0 -left-full w-[75%] h-[100dvh] bg-[#0a0f1a] p-6 transition-[left] duration-500 z-[999] overflow-y-auto">
+                <img loading="lazy" src="assets/image/logo/logo.png" alt="" class="h-14 mb-10">
+                <nav>
+                    <div class="flex flex-col space-y-4">
+                        <a href="index.html" class="hover:text-[#FFD700] transition-colors montserrat">Home</a>
+                        <a href="about.html" class="hover:text-[#FFD700] transition-colors montserrat">About Us</a>
+                        <a href="services.html" class="hover:text-[#FFD700] transition-colors montserrat">Services</a>
+                        <a href="franchise.html" class="hover:text-[#FFD700] transition-colors montserrat">Franchise</a>
+                        <a href="index.html#gallery" class="hover:text-[#FFD700] transition-colors montserrat">Gallery</a>
+                        <a href="contact.html" class="hover:text-[#FFD700] transition-colors montserrat">Contact
+                            Us</a>
+                    </div>
+                    <a href="contact.html">
+                        <button
+                            class="gold-gradient text-black px-6 py-2.5 text-sm montserrat rounded-full font-semibold w-full text-center mt-8">
+                            <i class="ri-calendar-2-fill mr-1"></i>
+                            Book Appointment
+                        </button>
+                    </a>
+                </nav>
+            </div>
+        </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative pt-52 pb-10 flex flex-col justify-center text-center">
+            <div class="container max-w-5xl mx-auto px-5 fade-in">
+                <h1 class="text-2xl md:text-5xl font-bold text-black mb-6 leading-tight">About Our Journey<br> to
+                    Inspire and Empower Your Beauty</h1>
+                <p class="md:text-lg text-gray-700 mb-8">
+                    We turn beauty dreams into reality with luxury, innovation, and care. Discover how Varnika Glam is
+                    redefining the salon experience for everyone.
+                </p>
+                <a href="#story"
+                    class="inline-block gold-gradient text-black px-8 py-3 rounded-full font-semibold text-sm md:text-base shadow-lg transition">Discover
+                    Our Story</a>
+            </div>
+            <div class="container relative px-5 flex justify-center mt-16 mx-auto fade-in">
+                <div class="relative w-full rounded-3xl overflow-hidden">
+                    <img src="assets/image/other-img/img-5.jpg"
+                        alt="Varnika Glam App" class="rounded-3xl w-full h-[400px] md:h-[700px] object-cover z-10 object-top" loading="lazy">
+                        <div class="absolute w-full h-full top-0 left-0 bg-black opacity-10 z-10"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- our story section -->
+        <section id="story" class="py-24">
+            <div class="container mx-auto px-5">
+                <div class="text-center mb-6 fade-in">
+                    <h2 class="text-2xl md:text-5xl font-bold text-black mb-6">Our Story</h2>
+                    <div class="w-24 h-[3px] gold-gradient mx-auto mb-8"></div>
+                </div>
+                <div class="mx-auto grid lg:grid-cols-2 gap-8 mt-16 fade-in">
+                    <div class="order-2 lg:order-1 space-y-4 text-black leading-relaxed text-sm md:text-lg">
+                        <p>
+                            <span class="text-[#ffbb00] font-[600]">Varnika Glam began</span> in 2015 with a simple yet
+                            powerful
+                            vision: to redefine the beauty experience in India. We believed that beauty is not just
+                            about appearance, but about confidence, self-expression, and feeling truly valued. Our
+                            founders set out to create a space where every guest feels welcomed, understood, and
+                            celebrated.
+                        </p>
+                        <p>
+                            From the very first day, we focused on raising the bar—offering luxurious services,
+                            maintaining the highest standards of hygiene, and building a team of passionate
+                            professionals who care deeply about every client’s journey. Our approach is rooted in
+                            genuine hospitality, attention to detail, and a commitment to continuous learning and
+                            innovation.
+                        </p>
+                        <p>
+                            Over the years, Varnika Glam has grown from a single salon to a trusted name across India.
+                            We have embraced new trends, technologies, and techniques, always striving to deliver an
+                            experience that is both personal and exceptional. Our story is shaped by the smiles of our
+                            clients, the dedication of our team, and the trust we have earned in every city we serve.
+                        </p>
+                    </div>
+                    <div class="order-1 lg:order-2 grid grid-cols-2 gap-4 h-fit">
+                        <img loading="lazy"
+                            src="assets/image/other-img/img-3.jpeg"
+                            alt="Salon Interior 1" class="w-full h-64 object-cover rounded-lg shadow-md">
+                        <img loading="lazy"
+                            src="assets/image/other-img/img-4.jpg"
+                            alt="Makeover Service" class="w-full h-64 object-cover rounded-lg mt-8 shadow-md">
+                        <img loading="lazy"
+                            src="assets/image/other-img/img-2.jpg" 
+                            alt="Hair Styling" class="w-full h-64 object-cover rounded-lg -mt-8 shadow-md">
+                        <img loading="lazy"
+                            src="assets/image/other-img/img-1.jpg"
+                            alt="Salon Interior 2" class="w-full h-64 object-cover rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Core Values -->
+        <section class="py-24 bg-gradient-to-br from-[#181c23] via-[#232733] to-[#181c23]">
+            <div class="container mx-auto px-5">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-4xl font-bold gold-text mb-6">Our Core Values</h2>
+                    <div class="w-20 h-1 gold-gradient mx-auto mb-6"></div>
+                </div>
+                <div class="flex flex-col lg:flex-row gap-16 md:gap-0 justify-between relative fade-in">
+
+                    <!-- Value 1 -->
+                    <div
+                        class="flex-1 flex flex-col items-center lg:items-end text-center lg:text-right px-4 relative z-10">
+                        <i class="ri-star-smile-line text-[#FFD700] text-3xl md:text-4xl mb-3"></i>
+                        <h3 class="text-lg md:text-xl font-bold gold-text mb-1">Customer Delight</h3>
+                        <div class="w-12 h-[3px] gold-gradient mb-3 mx-auto lg:ml-auto lg:mx-0"></div>
+                        <p class="text-gray-300 text-sm md:text-base mb-2">
+                            We believe every guest deserves to feel special. Our team goes above and beyond to create
+                            memorable, personalized experiences. From the moment you enter, our focus is on your
+                            comfort, care, and happiness—because your
+                            smile is our biggest reward.
+                        </p>
+                    </div>
+                    <!-- Value 2 -->
+                    <div class="flex-1 flex flex-col items-center text-center px-4 relative z-10">
+                        <i class="ri-shield-star-line text-[#FFD700] text-3xl md:text-4xl mb-3"></i>
+                        <h3 class="text-lg md:text-xl font-bold gold-text mb-1">Integrity & Trust</h3>
+                        <div class="w-12 h-[3px] gold-gradient mb-3 mx-auto"></div>
+                        <p class="text-gray-300 text-sm md:text-base mb-2">
+                            Honesty and transparency are at the heart of everything we do. We build lasting
+                            relationships based on trust and respect. Our clients trust us because we always put their
+                            well-being first, and we stand by our
+                            promises—every single time.
+                        </p>
+                    </div>
+                    <!-- Value 3 -->
+                    <div
+                        class="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left px-4 relative z-10">
+                        <i class="ri-magic-line text-[#FFD700] text-3xl md:text-4xl mb-3"></i>
+                        <h3 class="text-lg md:text-xl font-bold gold-text mb-1">Innovation</h3>
+                        <div class="w-12 h-[3px] gold-gradient mb-3 mx-auto lg:mr-auto lg:mx-0"></div>
+                        <p class="text-gray-300 text-sm md:text-base mb-2">
+                            We never stop learning, evolving, and creating. Our passion for new trends and techniques
+                            keeps us ahead in the beauty industry. Every service, every product, every experience is
+                            designed to inspire confidence and set new
+                            standards of excellence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Founder -->
+        <section class="py-24 bg-gradient-to-b from-[#fffbe6] via-[#fff] to-[#fffceb]">
+            <div class="container mx-auto px-5">
+                <div class="text-center mb-16 fade-in">
+                    <h2 class="text-2xl md:text-4xl font-bold text-black mb-6">Meet Our Founder</h2>
+                    <div class="w-20 h-[3px] gold-gradient mx-auto mb-6"></div>
+                    <p class="md:text-lg text-gray-700 max-w-2xl mx-auto">
+                        The visionary behind Varnika Glam – leading with passion, creativity, and a commitment to
+                        excellence.
+                    </p>
+                </div>
+                <div class="flex flex-col lg:flex-row items-center justify-center gap-8 fade-in">
+                    <div class="flex-shrink-0">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Founder"
+                            class="w-[290px] h-[290px] rounded-full border-4 border-[#FFD700]/40 shadow-xl object-cover mb-6 md:mb-0" loading="lazy">
+                    </div>
+                    <div class="max-w-3xl text-center md:text-left">
+                        <h3 class="text-2xl font-bold gold-text mb-2">Varnika Sharma</h3>
+                        <p class="text-gray-800 font-semibold mb-2">Founder & Creative Director</p>
+                        <p class="text-gray-600 text-sm md:text-base mb-4">
+                            A pioneer in luxury beauty, Varnika’s vision and creativity have shaped the brand’s identity
+                            and success. Her journey began with a dream to redefine the salon experience in India—making
+                            every guest feel celebrated, confident, and truly special.
+                        </p>
+                        <p class="text-gray-600 text-sm md:text-base mb-4">
+                            With a relentless focus on innovation, hospitality, and excellence, Varnika has built a team
+                            and a culture that inspires trust and loyalty. Her leadership continues to set new standards
+                            in the beauty industry, empowering both clients and professionals to shine.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section class="py-20 bg-white">
+            <div class="container mx-auto px-5 text-center fade-in">
+                <h2 class="text-2xl md:text-4xl font-bold text-black mb-6">Experience the Varnika Glam Difference</h2>
+                <p class="md:text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+                    Join us on our journey of beauty, innovation, and excellence. Book your appointment or explore
+                    franchise opportunities today!
+                </p>
+                <a href="/contact.html"
+                    class="gold-gradient text-black px-10 py-4 rounded-full font-semibold text-sm md:text-base shadow-lg hover:scale-105 transition">Contact
+                    Us</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-12 py-6 bg-gray-900/90 border-t border-gray-800">
+        <div class="container mx-auto px-5">
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10 mb-10">
+
+                <!-- About -->
+                <div class="text-center xl:text-left sm:col-span-2 lg:col-span-3 xl:col-span-1">
+                    <div class="flex items-center justify-center xl:justify-start mb-4">
+                        <img loading="lazy" src="assets/image/logo/logo.png" alt="Varnika Glam Logo"
+                            class="h-14 xl:h-20">
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Varnika Glam is a premium unisex salon & makeover destination offering luxury styling,
+                        bridal makeovers, and franchise opportunities across India.
+                    </p>
+
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 gold-text">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#home" class="text-gray-400 hover:text-[#FFD700] transition">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-[#FFD700] transition">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-[#FFD700] transition">Services</a></li>
+                        <li><a href="#franchise" class="text-gray-400 hover:text-[#FFD700] transition">Franchise</a>
+                        </li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-[#FFD700] transition">Gallery</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-[#FFD700] transition">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 gold-text">Contact Us</h4>
+                    <ul class="space-y-3 text-sm text-gray-400">
+                        <li><i class="ri-map-pin-2-fill text-[#FFD700] mr-2"></i> 123 Glam Street, New Delhi, India</li>
+                        <li><i class="ri-phone-fill text-[#FFD700] mr-2"></i> +91 98765 43210</li>
+                        <li><i class="ri-mail-fill text-[#FFD700] mr-2"></i> info@varnikaglam.com</li>
+                    </ul>
+
+                    <h4 class="text-lg font-semibold mt-6 mb-3 gold-text">Working Hours</h4>
+                    <p class="text-gray-400 text-sm">Mon - Sun: 10:00 AM - 8:00 PM</p>
+                </div>
+
+                <!-- Newsletter -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4 gold-text">Stay Updated</h4>
+                    <p class="text-gray-400 text-sm mb-4">
+                        Subscribe to get latest offers, styling tips & franchise updates.
+                    </p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email"
+                            class="w-full text-sm px-5 py-3 rounded-l-full focus:outline-none text-gray-900">
+                        <button type="submit"
+                            class="gold-gradient px-5 py-3 text-sm rounded-r-full text-black font-semibold transition">
+                            Subscribe
+                        </button>
+                    </form>
+                    <div class="mt-6">
+                        <h4 class="text-lg font-semibold mb-3 gold-text">Follow Us</h4>
+                        <div class="flex space-x-3">
+                            <a href="#"
+                                class="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-all">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-all">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-all">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                            <a href="#"
+                                class="w-9 h-9 bg-gray-700 rounded-full flex items-center justify-center hover:bg-[#FFD700] hover:text-black transition-all">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-gray-700 pt-6 text-center">
+                <p class="text-gray-500 text-sm">&copy; 2025 Varnika Glam. All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="assets/js/global.js"></script>
+</body>
+
+</html>
